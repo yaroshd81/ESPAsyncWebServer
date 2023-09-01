@@ -69,7 +69,6 @@ namespace WEBSERVER_H
   HTTP_OPTIONS = 0b01000000,
   HTTP_ANY     = 0b01111111,
 } WebRequestMethod;
-#endif
 }
 
 
