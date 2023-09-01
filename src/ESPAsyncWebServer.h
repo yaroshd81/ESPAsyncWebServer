@@ -57,8 +57,9 @@ class AsyncStaticWebHandler;
 class AsyncCallbackWebHandler;
 class AsyncResponseStream;
 
-#ifndef WEBSERVER_H
-typedef enum {
+namespace WEBSERVER_H
+{
+  typedef enum {
   HTTP_GET     = 0b00000001,
   HTTP_POST    = 0b00000010,
   HTTP_DELETE  = 0b00000100,
@@ -69,6 +70,8 @@ typedef enum {
   HTTP_ANY     = 0b01111111,
 } WebRequestMethod;
 #endif
+}
+
 
 //if this value is returned when asked for data, packet will not be sent and you will be asked for data again
 #define RESPONSE_TRY_AGAIN 0xFFFFFFFF
